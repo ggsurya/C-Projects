@@ -23,12 +23,12 @@ int main()
             break;
         case '/':
             if(num2==0)
-                printf("Error: Division by zero is not allowed..!\n");
+                printf("Error: Division by zero is not allowed.\n");
             else
                 printf("Division: %.2lf",num1/num2);
                 break;
         default:
-            printf("Invalid Operator Entered");
+            printf("Invalid Number (or) Operator Entered.");
     }
     return 0;
 }
