@@ -4,20 +4,25 @@
 #define MAX_LEN 100
 char tasks[MAX_TASKS][MAX_LEN];
 int taskCount=0;
+void clearInputBuffer()
+{
+    int ch;
+    while((ch=getchar())!='\n'&&ch!=EOF);
+}
 void addTask()
 {
     if(taskCount<MAX_TASKS)
     {
         printf("Enter task: ");
-        getchar();
+        clearInputBuffer();
         fgets(tasks[taskCount],MAX_LEN,stdin);
         tasks[taskCount][strcspn(tasks[taskCount],"\n")]='\0';
         taskCount++;
-        printf("Task added!\n");
+        printf(">>> Task added successfully!\n");
     }
     else
     {
-        printf("Task list full!\n");
+        printf("!!! Task list is full. Cannot add more tasks.\n");
     }
 }
 void viewTasks()
@@ -27,20 +32,21 @@ void viewTasks()
         printf("No tasks available\n");
         return;
     }
-    printf("\n---To-Do List---\n");
+    printf("\n-------- TO-DO LIST --------\n");
     for(int i=0;i<taskCount;i++)
     {
         printf("%d. %s\n",i+1,tasks[i]);
     }
+    printf("----------------------------\n");
 }
 void deleteTask()
 {
     int index;
-    printf("Enter task number to delete: ");
+    printf(">>> Enter task number to delete: ");
     scanf("%d",&index);
     if(index<1||index>taskCount)
     {
-        printf("Invalid task number..!\n");
+        printf("!!! Invalid task number. Try again.\n");
         return;
     }
     for(int i=index-1;i<taskCount-1;i++)
@@ -48,15 +54,23 @@ void deleteTask()
         strcpy(tasks[i],tasks[i+1]);
     }
     taskCount--;
-    printf("Task deleted..!\n");
+    printf(">>> Task deleted successfully.\n");
 }
 int main()
 {
     int choice;
+    printf("====================================\n");
+    printf("         SIMPLE TO-DO LIST\n");
+    printf("====================================\n");
     do
     {
-        printf("\n1. Add Task\n2. View Tasks\n3. Delete Task\n4. Exit\n");
-        printf("Enter choice: ");
+        printf("\nMENU:\n");
+        printf("1. Add Task\n");
+        printf("2. View Tasks\n");
+        printf("3. Delete Task\n");
+        printf("4. Exit\n");
+        printf("------------------------------------\n");
+        printf(">>> Enter your choice (1-4): ");
         scanf("%d",&choice);
         switch(choice)
         {
@@ -70,10 +84,10 @@ int main()
                 deleteTask();
                 break;
             case 4:
-                printf("Goodbye..!\n");
+                printf(">>> Exiting... Goodbye!\n");
                 break;
             default:
-                printf("Invalid choice..!\n");
+                printf("!!! Invalid choice. Please enter a number between 1 and 4.\n");
                 break;
         }
     }
