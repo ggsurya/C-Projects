@@ -57,10 +57,13 @@ Performs:
 1. Clone the repository:
    ```bash
    git clone https://github.com/ggsurya/C-Projects.git
-2. Open any .c file in your favorite C compiler or IDE
-3. Compile and run using:
+2. Open any .c file in your favorite C compiler or IDE(e.g., Code::Blocks, Visual Studio, or VS Code).
+3. Compile and run using terminal:
    ```bash
    gcc filename.c -o output./output
+  Replace filename.c with the actual file name (e.g., calculator.c).
+
+---
 
 ## 📚 Ideal For
 - Beginners learning C  
