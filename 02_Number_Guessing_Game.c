@@ -7,27 +7,28 @@ int main()
     srand(time(0));
     number=rand()%100+1;
     printf("====================================\n");
-    printf("Welcome to the Number Guessing Game..!\n");
+    printf("[Welcome to the Number Guessing Game]\n");
     printf("====================================\n");
     printf("I have chosen a number between 1 and 100.\n");
     printf("Can you guess what it is?\n\n");
     do
     {
-        printf("Enter your guess: ");
+        printf(">>> Enter your guess: ");
         scanf("%d",&guess);
         attempts++;
         if(guess>number)
         {
-            printf("Too high..! Try again\n");
+            printf("   Too high! Try again.\n\n");
         } 
         else if(guess<number)
         {
-            printf("Too low..! Try again\n");
+            printf("   Too low! Try again.\n\n");
         } 
         else
         {
             printf("------------------------------------\n");
-            printf(" Congratulations..! You guessed it in %d attempts..!\n", attempts);
+            printf("  Congratulations! You guessed it right.\n");
+            printf("  Total attempts: %d\n",attempts);
             printf("------------------------------------\n");
         }
     }
