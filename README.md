@@ -61,8 +61,6 @@ Performs:
 3. Compile and run using:
    ```bash
    gcc filename.c -o output./output
-   
----
 
 ## 📚 Ideal For
 - Beginners learning C  
