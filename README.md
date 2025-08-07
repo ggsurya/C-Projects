@@ -59,8 +59,10 @@ Performs:
    git clone https://github.com/ggsurya/C-Projects.git
 2. Open any .c file in your favorite C compiler or IDE
 3. Compile and run using:
-   gcc filename.c -o output
-./output
+   ```bash
+   gcc filename.c -o output./output
+   
+---
 
 ## 📚 Ideal For
 - Beginners learning C  
