@@ -5,56 +5,97 @@ struct Account
     char name[50];
     int accountNumber;
     float balance;
+    int isCreated;
 };
-struct Account acc;
+struct Account acc={.isCreated=0};
+void clearInputBuffer()
+{
+    int ch;
+    while((ch=getchar())!='\n'&&ch!=EOF);
+}
 void createAccount()
 {
-    printf("Enter account holder name: ");
-    getchar();
+    printf("\n>>> Enter account holder name: ");
+    clearInputBuffer();
     fgets(acc.name,sizeof(acc.name),stdin);
     acc.name[strcspn(acc.name,"\n")]='\0';
-    printf("Enter account number: ");
+    printf(">>> Enter account number: ");
     scanf("%d",&acc.accountNumber);
     acc.balance=0;
-    printf("Account created successfully..!\n");
+    acc.isCreated=1;
+    printf(">>> Account created successfully!\n");
 }
 void deposit()
 {
+    if(!acc.isCreated)
+    {
+        printf("!!! Please create an account first.\n");
+        return;
+    }
     float amount;
     printf("Enter deposit amount: ");
     scanf("%f",&amount);
+    if(amount<=0)
+    {
+        printf("!!! Invalid amount. Must be greater than 0.\n");
+        return;
+    }
     acc.balance+=amount;
     printf("Amount deposited successfully!\n");
 }
 void withdraw()
 {
-    float amount;
-    printf("Enter withdraw amount: ");
-    scanf("%f",&amount);
-    if(amount>acc.balance)
+    if(!acc.isCreated)
     {
-        printf("Insufficient balance..!\n");
+        printf("!!! Please create an account first.\n");
+        return;
+    }
+    float amount;
+    printf(">>> Enter withdraw amount: ");
+    scanf("%f",&amount);
+    if(amount<=0)
+    {
+        printf("!!! Invalid amount. Must be greater than 0.\n");
+    }
+    else if(amount>acc.balance)
+    {
+        printf("!!! Insufficient balance.\n");
     }
     else
     {
         acc.balance-=amount;
-        printf("Amount withdrawn successfully..!\n");
+        printf(">>> Amount withdrawn successfully!\n");
     }
 }
 void checkBalance()
 {
-    printf("\n---Account Details---\n");
-    printf("Name: %s\n",acc.name);
+    if(!acc.isCreated)
+    {
+        printf("!!! Please create an account first.\n");
+        return;
+    }
+    printf("\n------ Account Details ------\n");
+    printf("Holder Name   : %s\n",acc.name);
     printf("Account Number: %d\n",acc.accountNumber);
-    printf("Balance: %.2f\n",acc.balance);
+    printf("Balance       : Rs. %.2f\n",acc.balance);
+    printf("------------------------------\n");
 }
 int main()
 {
     int choice;
+    printf("====================================\n");
+    printf("     SIMPLE BANK ACCOUNT SYSTEM     \n");
+    printf("====================================\n");
     do
     {
-        printf("\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Check Balance\n5. Exit\n");
-        printf("Enter choice: ");
+        printf("\nMenu:\n");
+        printf("1. Create Account\n");
+        printf("2. Deposit\n");
+        printf("3. Withdraw\n");
+        printf("4. Check Balance\n");
+        printf("5. Exit\n");
+        printf("------------------------------------\n");
+        printf(">>> Enter your choice (1-5): ");
         scanf("%d",&choice);
         switch(choice)
         {
@@ -71,10 +112,10 @@ int main()
                 checkBalance();
                 break;
             case 5:
-                printf("Goodbye..!\n");
+                printf(">>> Exiting... Thank you!\n");
                 break;
             default:
-                printf("Invalid choice..!\n");
+                printf("!!! Invalid choice. Please try again.\n");
                 break;
         }
     }
