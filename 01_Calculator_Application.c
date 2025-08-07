@@ -8,7 +8,8 @@ int main()
     printf("Enter the 2nd number: ");
     scanf("%lf",&num2);
     printf("Enter the operator(+,-,*,/): ");
-    scanf("\n%c",&op);
+    scanf(" %c",&op);
+    printf("\n-----Result-----\n");
     switch(op)
     {
         case '+':
@@ -21,8 +22,11 @@ int main()
             printf("Multiplication: %.2lf",num1*num2);
             break;
         case '/':
-            printf("Division: %.2lf",num1/num2);
-            break;
+            if(num2==0)
+                printf("Error: Division by zero is not allowed..!\n");
+            else
+                printf("Division: %.2lf",num1/num2);
+                break;
         default:
             printf("Invalid Operator Entered");
     }
