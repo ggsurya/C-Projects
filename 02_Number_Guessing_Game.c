@@ -6,8 +6,11 @@ int main()
     int number,guess,attempts=0;
     srand(time(0));
     number=rand()%100+1;
-    printf("Welcome to the Number Guessing Game!\n");
+    printf("====================================\n");
+    printf("Welcome to the Number Guessing Game..!\n");
+    printf("====================================\n");
     printf("I have chosen a number between 1 and 100.\n");
+    printf("Can you guess what it is?\n\n");
     do
     {
         printf("Enter your guess: ");
@@ -23,7 +26,9 @@ int main()
         } 
         else
         {
+            printf("------------------------------------\n");
             printf(" Congratulations..! You guessed it in %d attempts..!\n", attempts);
+            printf("------------------------------------\n");
         }
     }
     while(guess!=number);
