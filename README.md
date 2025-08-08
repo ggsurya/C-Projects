@@ -6,7 +6,7 @@ A collection of beginner-friendly C console applications, ideal for learning pro
 
 ## 📁 Projects Included
 
-### 1. Calculator  
+### 1. Simple Calculator App
 Performs:
 - Addition, subtraction, multiplication, division  
 - Modulus calculation  
@@ -34,7 +34,7 @@ Performs:
 
 ---
 
-### 4. Simple To‑Do List  
+### 4. Mini To‑Do List Manager 
 - Add new tasks  
 - View all tasks  
 - Delete specific tasks by number  
@@ -43,7 +43,7 @@ Performs:
 
 ---
 
-### 5. Bank Management System  
+### 5. Mini Bank Account Management System
 - Account creation (name, number, balance)  
 - Deposit and withdrawal functionality  
 - File handling for persistent data (optional)
