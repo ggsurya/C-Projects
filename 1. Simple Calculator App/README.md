@@ -23,6 +23,21 @@ A basic command-line calculator implemented in C that supports addition, subtrac
 4. Follow the on-screen prompts to enter two numbers and an operator.
 5. View the calculation result or error messages accordingly.
 
+## Example
+
+```
+====================================
+         Simple Calculator
+====================================
+Enter the 1st number     : 12.5
+Enter the 2nd number     : 3.5
+Enter the operator (+ - * /): *
+
+------------- Result -------------
+Multiplication : 12.50 * 3.50 = 43.75
+====================================
+```
+
 ## Error Handling
 
 1. Division by zero attempts will display:
