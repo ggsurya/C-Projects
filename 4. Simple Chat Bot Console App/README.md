@@ -24,7 +24,7 @@ A basic command-line chatbot written in C that can respond to simple greetings, 
    ```bash
    ./chatbot
 4. Type your messages and interact with the chatbot.
-   - Type 'bye' to exit the program.
+   - Type "bye" to exit the program.
 
 ## Example
 
