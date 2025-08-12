@@ -23,8 +23,7 @@ A simple command-line temperature converter written in C that allows users to co
 3. Run the executable:
    ```bash
    ./temp_converter
-4. Follow the on-screen prompts to enter two numbers and an operator.
-5. View the calculation result or error messages accordingly.
+4. Follow the on-screen menu to select the conversion type and enter the temperature.
 
 ## Example
 
