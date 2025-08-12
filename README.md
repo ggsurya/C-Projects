@@ -10,9 +10,9 @@ A collection of beginner-friendly C console applications, ideal for learning pro
 
 ### 1. 🔢 Simple Calculator App
 
-A basic calculator that performs addition, subtraction, multiplication, division, and modulus calculations. It uses simple functions and conditional statements to handle different operations.
+A basic calculator that performs addition, subraction, multiplication and division calculations. It uses simple functions and conditional statements to handle different operations.
 
-Key concepts: Using functions to organize code, applying conditionals to select operations, and utilizing math library functions for calculations.
+Key concepts: Using functions to organize code, applying swich conditionals to select operations, and utilizing functions for calculations.
 
 Performs:
 - Addition
@@ -20,7 +20,7 @@ Performs:
 - Multiplication 
 - Division  
 
-**Concepts Used:** Arithmetical operations, conditionals(switch)
+**Concepts Used:** Functions, arithmetic operations, conditionals(switch)
 
 ---
 
@@ -50,7 +50,7 @@ Performs:
   - Celsius ↔ Fahrenheit
   - Celsius ↔ Kelvin  
 
-**Concepts Used:** Functions, arithmetic operations
+**Concepts Used:** Functions, arithmetic operations, conditionals(switch)
 
 ---
 
