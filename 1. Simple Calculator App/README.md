@@ -24,7 +24,6 @@ A basic command-line calculator implemented in C that supports addition, subtrac
 4. Follow the on-screen prompts to enter two numbers and an operator.
 5. View the calculation result or error messages accordingly.
 
-
 ## Error Handling
 
 1. Division by zero attempts will display:
@@ -37,3 +36,4 @@ A basic command-line calculator implemented in C that supports addition, subtrac
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
