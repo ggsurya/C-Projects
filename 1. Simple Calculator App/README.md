@@ -21,7 +21,6 @@ A basic command-line calculator implemented in C that supports addition, subtrac
    ```bash
    ./calculator
 4. Follow the on-screen prompts to enter two numbers and an operator.
-5. View the calculation result or error messages accordingly.
 
 ## Example
 
