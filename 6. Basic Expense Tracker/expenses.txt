@@ -1,0 +1,7 @@
+Payroll|8026.00
+Benefits|2109.00
+Insurance|243.00
+Rent|1135.00
+Utilities|567.00
+Sale Expenses|324.00
+Office Supplies|973.00
