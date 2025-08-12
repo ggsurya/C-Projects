@@ -1,4 +1,4 @@
-# Simple Calculator in C
+# 🔢 Simple Calculator in C
 
 A basic command-line calculator implemented in C that supports addition, subtraction, multiplication, and division of two numbers.
 
@@ -15,7 +15,6 @@ A basic command-line calculator implemented in C that supports addition, subtrac
 1. Clone the repository or download the source code file.
 
 2. Compile the program using a C compiler, for example:
-
    ```bash
    gcc -o calculator calculator.c
 3. Run the executable:
@@ -35,5 +34,11 @@ A basic command-line calculator implemented in C that supports addition, subtrac
    
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ggsurya/C-Projects/blob/main/LICENSE) file for details.
 
+## 📩 Contact
+
+**G.G. Surya**  
+📧 Email: ggsuryaff@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/g-g-surya-5aa9312b4)
+🔗 [GitHub](https://github.com/ggsurya)
