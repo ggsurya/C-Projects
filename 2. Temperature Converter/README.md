@@ -16,7 +16,6 @@ A simple command-line temperature converter written in C that allows users to co
 ## Usage
 
 1. Clone the repository or download the source code file.
-
 2. Compile the program using a C compiler, for example:
    ```bash
    gcc -o temp_converter temp_converter.c
