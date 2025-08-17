@@ -14,7 +14,6 @@ A simple interactive command-line game written in C where the player tries to gu
 ## Usage
 
 1. Clone the repository or download the source code file.
-
 2. Compile the program using a C compiler, for example:
    ```bash
    gcc -o guessing_game guessing_game.c
