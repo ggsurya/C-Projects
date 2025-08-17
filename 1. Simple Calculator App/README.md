@@ -13,7 +13,6 @@ A basic command-line calculator implemented in C that supports addition, subtrac
 ## Usage
 
 1. Clone the repository or download the source code file.
-
 2. Compile the program using a C compiler, for example:
    ```bash
    gcc -o calculator calculator.c
