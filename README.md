@@ -14,6 +14,7 @@ This repository contains a variety of small C programs demonstrating basic to in
 - [Expense Tracker](https://github.com/ggsurya/C-Projects/blob/main/README.md) — Track, view, and delete expenses stored in a file.
 
 ## 📩 Contact
+
 **G.G. Surya**  
 📧 Email: ggsuryaff@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/g-g-surya-5aa9312b4)
