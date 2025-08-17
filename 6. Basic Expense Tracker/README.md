@@ -13,7 +13,6 @@ A simple command-line expense tracking application written in C that allows user
 ## Usage
 
 1. Clone the repository or download the source code file.
-
 2. Compile the program using a C compiler, for example:
    ```bash
    gcc -o expense_tracker expense_tracker.c
