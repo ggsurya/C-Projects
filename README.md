@@ -2,7 +2,7 @@
 
 Welcome to my C Projects repository!
 
-This repository contains a variety of small C programs demonstrating basic to intermediate programming concepts.
+This collection showcases several small to intermediate console applications demonstrating core programming concepts and practical implementations using C.
 
 ## 📁 Projects Included
 
